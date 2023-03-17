@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accses</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <main class="main wrapper">
+        <form class="form" id="form">
+            <div class="form__item">
+                <label for="firstname">First Name</label>
+                <input type="text" class="input" name="firstname" placeholder="John">
+                <span class="rule firstname-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    Only letters
+                </span>
+                <span class="error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    First Name cannot be blank
+                </span>
+            </div>
+
+            <div class="form__item">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="input" name="lastname" placeholder="Smith">
+                <span class="rule lastname-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    Only letters
+                </span>
+                <span class="error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Last Name cannot be blank
+                </span>
+            </div>
+
+            <div class="form__item">
+                <label for="email">Email</label>
+                <input type="text" class="input" name="email" placeholder="johnsmith@email.com">
+                <span class="rule email-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    Valid email
+                </span>
+                <span class="error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Email cannot be blank
+                </span>
+            </div>
+
+            <div class="form__item">
+                <label for="password">Password</label>
+                <input type="password" class="input" name="password" placeholder="Password">
+                <i class="far fa-eye" onClick="makePasswordVisible(event)"></i>
+                <!-- <span class="rule capital-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    Capital letters
+                </span> -->
+                <!-- <span class="rule special-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    Special characters -->
+                </span>
+                <span class="rule numbers-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    Using numbers
+                </span>
+                <span class="rule char-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    8+ characters
+                </span>
+                <span class="error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Password cannot be blank
+                </span>
+            </div>
+
+            <div class="form__item">
+                <label for="password-check">Password Check</label>
+                <input type="password" class="input" name="password-check" placeholder="Password">
+                <i class="far fa-eye" onClick="makePasswordVisible(event)"></i>
+                <span class="rule password-check-rule">
+                    <i class="icon far fa-times-circle times"></i>
+                    <i class="icon far fa-check-circle check"></i>
+                    Passwords match
+                </span>
+                <span class="error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Password cannot be blank
+                </span>
+            </div>
+
+            <input class="submit" type="submit" value="Send">
+        </form>
+    </main>
+
+    <aside class="modal hide" id="modal"></aside>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
