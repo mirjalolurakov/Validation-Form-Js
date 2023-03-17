@@ -77,17 +77,17 @@ function isValidPassword(parent, value) {
         numbers.classList.remove('valid');
     }
 
-    // if (/[A-Z]/.test(value)) {
-    //     capital.classList.add('valid');
-    // } else {
-    //     capital.classList.remove('valid');
-    // }
+    if (/[A-Z]/.test(value)) {
+        capital.classList.add('valid');
+    } else {
+        capital.classList.remove('valid');
+    }
 
-    // if (/[!@#$%^&*]/.test(value)) {
-    //     special.classList.add('valid');
-    // } else {
-    //     special.classList.remove('valid');
-    // }
+    if (/[!@#$%^&*]/.test(value)) {
+        special.classList.add('valid');
+    } else {
+        special.classList.remove('valid');
+    }
 
     if (value.length > 7) {
         char.classList.add('valid');
