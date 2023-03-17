@@ -66,8 +66,8 @@ function isValidEmail(parent, value) {
 }
 
 function isValidPassword(parent, value) {
-    // const capital = parent.querySelector('.capital-rule');
-    // const special = parent.querySelector('.special-rule');
+    const capital = parent.querySelector('.capital-rule');
+    const special = parent.querySelector('.special-rule');
     const numbers = parent.querySelector('.numbers-rule');
     const char = parent.querySelector('.char-rule');
 
